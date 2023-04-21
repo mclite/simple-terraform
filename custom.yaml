@@ -1,0 +1,9 @@
+version: 2
+deploy:
+  steps:
+    terraformPlan:
+      after:
+        - name: echo foo
+          run: echo foo
+#          env:
+#            FOO: bar
